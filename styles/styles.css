@@ -1,0 +1,86 @@
+body {
+    background-image: url(/images/Spindelnät.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.window {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-box {
+    max-height: 800px;
+    min-height: 400px;
+    max-width: 400px 100%;
+    min-width: 50px;
+    border: solid bisque 15px;
+    display: flex;
+    display: inline-block;
+    background-color: bisque;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+h1,
+h3 {
+    background-color: rgb(206, 198, 198);
+    width: 100%;
+}
+
+.label {
+    background-color: rgba(44, 107, 223, 0.5);
+    text-align: left;
+    padding: 0 3px 0 3px;
+}
+
+#label-password {
+    margin-top: 20px;
+}
+
+.input {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    /* I didn't get the external checkbox to work (with the current one checkbox as hidden), so i made my checkbox larger this way instead. #checkbox will also work*/
+    max-width: 20px 100%;
+    max-height: 20px;
+    cursor: pointer;
+}
+
+.input:hover {
+    background-color: rgb(235, 233, 120);
+}
+
+#select {
+    max-height: 55px 100%;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: coral;
+    border-radius: 25px;
+    height: 30px;
+    font-style: italic;
+}
